@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+
+import SignInForm from './Pages/SignIn/Form';
+import Register from './Pages/Register';
+import Home from './Pages/Home'
+import  HeaderContainer  from './Components/Header';
+import  Trending  from './Sections/Trending';
+import  DealsContainer  from './Sections/Deals';
+import LogIn from './Pages/SignIn';
+import { Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+        {/* <SignInForm/> */}
+        {/* <HeaderContainer/> */}
+        {/* <Register/> */}
+        {/* <Trending/>       */}
+        {/* <DealsContainer/> */}
+
+        {/* <LogIn/> */}
+
+        <Routes>
+          <Route path="/Login" element={<LogIn/>} />
+          <Route path="/" element={<Register/>} />
+          <Route path="/Home" element={<Home/>} />
+         
+          {/* <Route path="/Login" element={<LogIn/>} /> */}
+        </Routes>
+        
     </div>
   );
 }
