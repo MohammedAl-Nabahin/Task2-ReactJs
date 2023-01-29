@@ -31,6 +31,7 @@ const SearchBar = styled.div`
         width: 9vw;
         display: flex;
         align-items: center;
+        /* background-color: ; */
     }
 
 
@@ -48,6 +49,7 @@ const MyCategorySelect = styled.select`
      border: none;
      outline: none;
      cursor: pointer;
+     background-color: transparent;
 `;
 
 

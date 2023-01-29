@@ -1,12 +1,16 @@
 
-import SignInForm from './Pages/SignIn/Form';
+// import SignInForm from './Pages/SignIn/Form';
 import Register from './Pages/Register';
 import Home from './Pages/Home'
-import  HeaderContainer  from './Components/Header';
-import  Trending  from './Sections/Trending';
-import  DealsContainer  from './Sections/Deals';
+// import  HeaderContainer  from './Components/Header';
+// import  Trending  from './Sections/Trending';
+// import  DealsContainer  from './Sections/Deals';
 import LogIn from './Pages/SignIn';
 import { Route, Routes } from 'react-router-dom';
+import GlobalStyle from './global';
+
+import styled from 'styled-components';
+
 
 function App() {
   return (
@@ -18,6 +22,7 @@ function App() {
         {/* <DealsContainer/> */}
 
         {/* <LogIn/> */}
+        <GlobalStyle/>
 
         <Routes>
           <Route path="/Login" element={<LogIn/>} />

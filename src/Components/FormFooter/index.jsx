@@ -11,7 +11,7 @@ import styled from 'styled-components';
 const FormFooter = styled.div`
     display: flex;
     flex-direction: row;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
