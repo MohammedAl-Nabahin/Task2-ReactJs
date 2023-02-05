@@ -2,9 +2,9 @@ import React from 'react'
 
 import { SourceBox } from './style';
 
-function index({title , SourceButton , onClick}) {
+function index({title , SourceButton , onClick , home}) {
   return (
-    <SourceBox>
+    <SourceBox home={home}>
         <div className='sourceTitle'>{title}</div>
 
         <button className='sourceButton' onClick={onClick}>{SourceButton}</button>
@@ -12,4 +12,4 @@ function index({title , SourceButton , onClick}) {
   )
 }
 
-export default index
+export default index;

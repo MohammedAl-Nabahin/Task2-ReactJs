@@ -13,6 +13,10 @@ const SignInForm = styled.form`
     align-self: center;
     margin-top: 5.1em;
 
+    .error{
+        color: red;
+    }
+
 
     .FormContainer{
         justify-content: center;

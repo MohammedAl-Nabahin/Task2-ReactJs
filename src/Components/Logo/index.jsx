@@ -4,18 +4,22 @@ import React from 'react'
 import Logo from './style';
 
 import logo from '../../images/icons/logo.svg';
+import { Link } from 'react-router-dom';
 
 
 function index() {
   return (
-    <Logo>
+    
+        <Logo>
+             <Link to={"/Home"} id="logoLink">
+      <img src={logo} alt="logo" id='mylogo'/>
 
-        <img src={logo} alt="logo" id='mylogo'/>
 
-   
-         <h1 id='brand'>Brand</h1>
-      
-    </Logo>
+      <h1 id='brand'>Brand</h1>
+    </Link>
+</Logo>
+ 
+    
   )
 }
 

@@ -3,37 +3,49 @@ import styled from "styled-components";
 const HeaderContainer = styled.div`
     display: flex;
     flex-direction: column;
-    /* width: 100%; */
-    position: static;
+    width: 100%;
     /* padding: 0 2em; */
+    background-color: white;
+    margin-bottom: 1em;
+    z-index: 10;
+    /* position: static; */
+    /* margin: auto; */
+
 `;
 
 
 const HeaderSectionOne = styled.div`
-    display: grid;
-    grid-template-columns: 0.65fr 0.70fr 0.7fr;
-    /* justify-content: space-around; */
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: center;
     align-items: center;
     border-bottom: 0.1em solid #E3E8EE;
+    max-width: 100%;
     /* padding: 0 3em; */
+    /* position: relative; */
 
     #headerList {
         display: flex;
         gap: 1em;
+        width: 100%;
     }
  
 `;
 
 
 const HeaderSectionTwo = styled.div`
-    display: grid;
-    grid-template-columns:1fr 0.5fr ;
+    display: flex;
+    /* grid-template-columns:0.5fr 0.2fr ; */
+    flex-direction: row;
     width: 100%;
     justify-content: space-between;
     border-bottom: 0.1em solid #E3E8EE;
     align-items: center;
-    gap: 7em;
-    
+    gap: 10em;
+    a{
+        text-decoration: none;
+        color: black;
+    }
 
 
     
@@ -112,8 +124,29 @@ const Ship = styled.div`
     flex-direction: row;
     gap:0.5em;
     cursor: pointer;
-    /* width: 20em; */
+    width: 15em;
     padding : 0 2em;
 `;
 
-export {HeaderContainer , HeaderSectionOne , HeaderSectionTwo , SettingsNav , NavPages , NavList , NavItem , Ship};
+const InnerContainer = styled.div`
+    width: 1190px;
+    display: flex;
+    flex: row;
+    justify-content: center;
+    align-items: center;
+    gap:40px;
+`;
+
+
+const InnerContainer2 = styled.div`
+    width: 100%;
+    display: flex;
+    flex: row;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    gap:247px;
+    padding-left: 23px;
+`;
+
+
+export {HeaderContainer , HeaderSectionOne , HeaderSectionTwo , SettingsNav , NavPages , NavList , NavItem , Ship , InnerContainer , InnerContainer2};

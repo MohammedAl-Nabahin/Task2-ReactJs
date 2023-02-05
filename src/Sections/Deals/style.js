@@ -3,10 +3,13 @@ import styled from "styled-components";
 const DealsContainer = styled.div`
     display: flex;
     flex-direction: row;
-    width: 1180px;
+    width:1180px;
+    /* max-width: 1180px; */
     height: 240px;
     border: 1px solid #BBBCBE;
     border-right: none;
+    background-color: white;
+    justify-content: center;
 `;
 
 const DealsTitle = styled.div`
@@ -40,7 +43,7 @@ const TimerContainer = styled.div`
 `;
 
 const LeftSide = styled.div`
-    width: 281px;
+    width: 288px;
     /* height: 240px; */
     display: flex;
     flex-direction:column;
@@ -53,8 +56,12 @@ const LeftSide = styled.div`
 
 const RightSide = styled.div`
      /* height: 240px; */
+     width:890px;
+     /* width: 100%; */
     display: flex;
     flex-direction:row;
+
+    /* background-color: red; */
 `;
 
 export {DealsContainer , DealsTitle , TimerContainer , LeftSide , RightSide};

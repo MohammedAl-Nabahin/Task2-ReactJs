@@ -6,10 +6,15 @@ import Home from './Pages/Home'
 // import  Trending  from './Sections/Trending';
 // import  DealsContainer  from './Sections/Deals';
 import LogIn from './Pages/SignIn';
+import TechStoreList from './Pages/TechStoreList';
+
+
 import { Route, Routes } from 'react-router-dom';
 import GlobalStyle from './global';
 
-import styled from 'styled-components';
+// import styled from 'styled-components';
+import  ShowItemContainer  from './Sections/ShowItemSection';
+import  ItemPage  from './Pages/ItemPage';
 
 
 function App() {
@@ -26,8 +31,12 @@ function App() {
 
         <Routes>
           <Route path="/Login" element={<LogIn/>} />
-          <Route path="/" element={<Register/>} />
-          <Route path="/Home" element={<Home/>} />
+          <Route path="/Register" element={<Register/>} />
+          <Route path="/" element={<Home/>} />
+          <Route path="/Tech" element={<TechStoreList/>} />
+          <Route path="/Item" element={<ItemPage/>} />
+
+
          
           {/* <Route path="/Login" element={<LogIn/>} /> */}
         </Routes>

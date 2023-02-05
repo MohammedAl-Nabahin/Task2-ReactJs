@@ -9,12 +9,21 @@ const Trending = styled.div`
     display: flex;
     flex-direction: row;
     /* justify-content: space-evenly; */
-    align-items: center;
-    width: 73em;
+    /* align-items: center; */
+    width: 1180;
     /* height: 25.000em; */
     gap: 1em;
-    padding: 1em 2em;
-    /* background-color: gray; */
+    padding: 1em 0;
+    /* padding:0; */
+    background-color: white;
+    justify-content: center;
+    border: 2px solid  #EFF2F4;
+    .joinLink{
+        width:100%;
+        margin-left: 2em;
+    }
+
+    
    
 `;
 
@@ -30,7 +39,9 @@ const TrendingList = styled.div`
 const TrendingListItem= styled.div`
     width: 15.625em;
     height: 2.5em;
-    padding-left: 0.2em;
+    display: flex;
+    align-items:center;
+    padding-left: 0.8em;
 
     &:hover{
         background-color: #E5F1FF;
@@ -51,8 +62,9 @@ const LearnMore = styled.div`
     background-size: cover;
     position: relative;
     background-image: url(${trendingPic});
-    width: 41.563em;
+    width: 665px;
     height: 22.500em;
+   
 
     .latest{
         position: absolute;
@@ -91,6 +103,7 @@ const GetStarted = styled.div`
     gap:0.5em;    
     /* align-items: center; */
     justify-content: center;
+    /* padding:auto; */
 
     #orangeBox{
     width: 13em;
@@ -118,6 +131,7 @@ const GetStarted = styled.div`
         margin: 0 0em;
         align-items: center;
         justify-content: center;
+        width: 100%;
 
        .spans{
         display: flex;

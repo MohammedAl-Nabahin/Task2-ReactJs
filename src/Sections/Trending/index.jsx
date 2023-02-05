@@ -1,11 +1,12 @@
 import React from 'react'
 
 import OfferBox from '../../Components/OfferBox';
-import Container from '../../Components/Container';
+// import Container from '../../Components/Container';
 
 import avatar from '../../images/icons/Avatar.svg';
 
 import { Trending , TrendingList , TrendingListItem , LearnMore , GetStarted , NavButton} from './style';
+import { Link } from 'react-router-dom';
 
 function index({join}) {
   return (
@@ -47,9 +48,17 @@ function index({join}) {
                         <span>let's get started</span>
                     </div>
                 </div>
-                
-                <NavButton join>Join now</NavButton>
-                <NavButton>Log in</NavButton>    
+                <div className='joinLink'>
+                    <Link to="/Register">
+                        <NavButton join>Join now</NavButton>
+                    </Link>
+                </div>
+
+                <div className='joinLink'>
+                    <Link to="/Login">
+                        <NavButton>Log in</NavButton> 
+                    </Link>   
+                </div>
             </div>
 
             

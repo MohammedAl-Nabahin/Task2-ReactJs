@@ -5,7 +5,8 @@ import styled from 'styled-components';
 const OfferCard = styled.div`
     display: flex;
     flex-direction: column;
-    width: 179px;
+    width: 182px;
+    /* width:14%; */
     height: 240px;
     border-right: 1px solid #BBBCBE;
     justify-content: center;
@@ -14,12 +15,15 @@ const OfferCard = styled.div`
     cursor: pointer;
 
     #discount{
+      display: flex;
         width: 61px;
         height: 28px;
         background: #FFE3E3;
         border-radius: 29px;
         color: red;
         text-align: center;
+        justify-content: center;
+        align-items: center;
 
     }
 

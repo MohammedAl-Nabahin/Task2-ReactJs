@@ -8,7 +8,8 @@ import NavIcon from '../NavIcon';
 
 
 //styles
-import { HeaderContainer , HeaderSectionOne  , HeaderSectionTwo , SettingsNav , NavPages, NavList, NavItem , Ship} from './style';
+import { HeaderContainer , HeaderSectionOne  , HeaderSectionTwo , SettingsNav , 
+    NavPages, NavList, NavItem , Ship , InnerContainer , InnerContainer2} from './style';
 
 
 //images
@@ -18,6 +19,7 @@ import fav from '../../images/icons/favorite.png';
 import cart from '../../images/icons/shopping-cart.png';
 import menu from '../../images/icons/menu.png';
 import germany from '../../images/icons/germany.svg';
+import { Link } from 'react-router-dom';
 // import Container from '../Container/style';
 
 
@@ -28,23 +30,27 @@ function index() {
         {/* <Container> */}
         <HeaderSectionOne>
             
-            <Logo/>
+            <InnerContainer>
 
-            <SearchBar/>
+            
+                <Logo/>
 
-            <SettingsNav>
-                <NavList id='headerList'>
-                    <NavIcon src={profile} alt="profile" id="profileIcon" iconTitle="Profile" className={"navImgs"}/>
-                    <NavIcon src={chat} alt="chat" id="chatIcon" iconTitle="Message" className={"navImgs"}/>
-                    <NavIcon src={fav} alt="orders" id="favIcon" iconTitle="Orders" className={"navImgs"}/>
-                    <NavIcon src={cart} alt="cart" id="cartIcon" iconTitle="My cart" className={"navImgs"}/>
-                </NavList>
-            </SettingsNav>
+                <SearchBar/>
 
+                <SettingsNav>
+                    <NavList id='headerList'>
+                        <NavIcon src={profile} alt="profile" id="profileIcon" iconTitle="Profile" className={"navImgs"}/>
+                        <NavIcon src={chat} alt="chat" id="chatIcon" iconTitle="Message" className={"navImgs"}/>
+                        <NavIcon src={fav} alt="orders" id="favIcon" iconTitle="Orders" className={"navImgs"}/>
+                        <NavIcon src={cart} alt="cart" id="cartIcon" iconTitle="My cart" className={"navImgs"}/>
+                    </NavList>
+                </SettingsNav>
+            </InnerContainer>
         </HeaderSectionOne>
         {/* </Container> */}
 
         <HeaderSectionTwo>
+        <InnerContainer2>
             <NavPages>
                 <NavList>
                     <NavItem id='menuItem'>
@@ -53,7 +59,10 @@ function index() {
                             All Category
                         </span>
                     </NavItem>
-                    <NavItem>Hot Offers</NavItem>
+                    <Link to={"/Tech"}>
+                    
+                        <NavItem>Hot Offers</NavItem>
+                    </Link>
                     <NavItem>Gift boxes</NavItem>
                     <NavItem>Projects</NavItem>
                     <NavItem>Menu item </NavItem>
@@ -83,6 +92,7 @@ function index() {
                     {/* </select> */}
                 </Ship>
             </NavList>
+            </InnerContainer2>
         </HeaderSectionTwo>
     </HeaderContainer>
    
