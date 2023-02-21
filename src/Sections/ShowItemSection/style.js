@@ -25,6 +25,7 @@ const Pics = styled.div`
     height: 56px;
     gap: 9.15px;
 
+
     
         #view{
             width: 345px;
@@ -35,7 +36,7 @@ const Pics = styled.div`
 `;
 
 const Pic = styled.div`
-    border: 1px solid #E4E4E3;
+    border: 2px solid #E4E4E3;
     border-radius: 6px;
         
     &:first-child{

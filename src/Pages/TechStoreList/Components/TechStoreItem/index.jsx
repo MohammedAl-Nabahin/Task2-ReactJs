@@ -3,15 +3,34 @@ import { NavLink } from 'react-router-dom';
 
 import {TechItem  ,ItemData , Price , Rating} from './style';
 
+
 import Icon from '../../../../Components/Icon';
 import Span from '../../../../Components/Span';
 import Like from '../Like';
 
 import rating from '../../../../images/icons/rating.png';
+import AddButton from '../../../../Components/AddToCartBtn';
 
-function index({src , alt , id , itemTitle , price , discount , info , orders}) {
+import  {useProductContext}  from '../../../../contexts/productContext';
+
+
+function Index({src , alt , id , itemTitle , price , discount , info , itemId }) {
+
+   
+        const {
+          state: { products },
+          addToCart,
+          removeFromCart,
+        } = useProductContext();
+      
+        const isExistInCart = () => products.find((item) => item.id === id);
+      
+        const toggleCart = () => {
+          isExistInCart() ? removeFromCart(id) : addToCart(src,itemTitle,price);
+        };
+      
   return (
-    <TechItem>
+    <TechItem id={itemId}>
         <Icon src={src} alt={alt} id={id}/>
 
         <ItemData>
@@ -35,10 +54,13 @@ function index({src , alt , id , itemTitle , price , discount , info , orders}) 
             <p>
                 {info}
             </p>
+            <div id='viewAndAdd'>
+                <NavLink to={"/Item"}>
+                    <Span data="View Details" className={"view"}/>
+                </NavLink>
 
-            <NavLink to={"/test"}>
-                <Span data="View Details" className={"view"}/>
-            </NavLink>
+                <AddButton onClick={toggleCart}/>
+            </div>
         </ItemData>
 
         <Like id="like"/>
@@ -47,4 +69,4 @@ function index({src , alt , id , itemTitle , price , discount , info , orders}) 
   )
 }
 
-export default index;
+export default Index;

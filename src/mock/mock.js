@@ -58,6 +58,28 @@ import headset2 from '../images/tech/headset2.png';
 import laptop2 from '../images/tech/laptop2.png';
 import ipad2 from '../images/tech/ipad2.png';
 import iphone2 from '../images/tech/iphone2.png';
+import bluePhone from '../images/tech/bluePhone.png';
+import ipad3 from '../images/tech/ipad3.png';
+
+//icon
+import checkIcon from '../images/icons/checkIcon2.png';
+
+
+//Clothes
+import smallSpor from '../images/clothes/Group smallSpor.png'
+import smallJacket from '../images/clothes/smallJacket.png'
+import smallShirt from '../images/clothes/smallShirt.png'
+import smallTshirt from '../images/clothes/smallTshirt.png'
+import smallShirt2 from '../images/clothes/smallShirt2.png';
+
+//Pay
+import visa from '../images/icons/Visa.png'
+import payoner from '../images/icons/payoner.png'
+import pay from '../images/icons/pay.png'
+import payment from '../images/icons/payment.png'
+import paypal from '../images/icons/paypal.png'
+
+
 
 
 
@@ -381,12 +403,168 @@ const RelatedItems = [
         price:"$32.00-$40.00"
     }
 
+];
 
-
-
-
-
-
+const TechListGrid = [
+    {
+        id:0,
+        src:iphone,
+        price:"$99.55",
+        discount:"$1128.00",
+        title:"GoPro HERO6 4K Action Camera - Black",
+        startsRated:"7.5"
+    },
+    {
+        id:1,
+        src:bluePhone,
+        price:"$99.55",
+        discount:"$1128.00",
+        title:"GoPro HERO6 4K Action Camera - Black",
+        startsRated:"7.5"
+    },
+    {
+        id:2,
+        src:phone,
+        price:"$99.55",
+        discount:"$1128.00",
+        title:"GoPro HERO6 4K Action Camera - Black",
+        startsRated:"7.5"
+    },
+    {
+        id:3,
+        src:ipad3,
+        price:"$99.55",
+        discount:"$1128.00",
+        title:"GoPro HERO6 4K Action Camera - Black",
+        startsRated:"7.5"
+    },
+    {
+        id:4,
+        src:camera,
+        price:"$99.55",
+        discount:"$1128.00",
+        title:"GoPro HERO6 4K Action Camera - Black",
+        startsRated:"7.5"
+    },
+    {
+        id:5,
+        src:iphone,
+        price:"$99.55",
+        discount:"$1128.00",
+        title:"GoPro HERO6 4K Action Camera - Black",
+        startsRated:"7.5"
+    },
+    {
+        id:6,
+        src:laptop,
+        price:"$99.55",
+        discount:"$1128.00",
+        title:"GoPro HERO6 4K Action Camera - Black",
+        startsRated:"7.5"
+    },
+    {
+        id:7,
+        src:watch,
+        price:"$99.55",
+        discount:"$1128.00",
+        title:"GoPro HERO6 4K Action Camera - Black",
+        startsRated:"5.5"
+    },
+    {
+        id:8,
+        src:bluePhone,
+        price:"$99.55",
+        discount:"$1128.00",
+        title:"GoPro HERO6 4K Action Camera - Black",
+        startsRated:"7.5"
+    }
+    
 
 ];
-export {HomeItems , TechItem , RecommendedItems , ExtraServices , Regions , TechListFlex , RelatedItems};
+
+
+const DescriptionCheckList = [
+    {
+        id:0,
+        src:checkIcon,
+        info:"Some great feature name here"
+    },
+    {
+        id:1,
+        src:checkIcon,
+        info:"Lorem ipsum dolor sit amet, consectetur"
+    },
+    {
+        id:2,
+        src:checkIcon,
+        info:"Duis aute irure dolor in reprehenderit"
+    },
+    {
+        id:3,
+        src:checkIcon,
+        info:"Some great feature name here"
+    }
+];
+
+
+const YouMayLikeItems = [
+
+    {
+        id:0,
+        src:smallSpor,
+        title:"Apple Watch Series Space Gray",
+        price:"$7.00 - $99.50"
+    },
+    {
+        id:1,
+        src:smallShirt,
+        title:"Apple Watch Series Space Gray",
+        price:"$7.00 - $99.50"
+    },
+    {
+        id:2,
+        src:smallJacket,
+        title:"Apple Watch Series Space Gray",
+        price:"$7.00 - $99.50"
+    },{
+        id:3,
+        src:smallTshirt,
+        title:"Apple Watch Series Space Gray",
+        price:"$7.00 - $99.50"
+    },
+    {
+        id:4,
+        src:smallShirt2,
+        title:"Apple Watch Series Space Gray",
+        price:"$7.00 - $99.50"
+    }
+
+];
+
+
+const WaysToPay = [
+    {
+        id:0,
+        src:visa
+    },
+    {
+        id:1,
+        src:payoner
+    },
+    {
+        id:2,
+        src:payment
+    }, {
+        id:3,
+        src:paypal
+    },
+    {
+        id:4,
+        src:pay
+    }
+];
+
+const products = [];
+
+export {HomeItems , TechItem , RecommendedItems , ExtraServices , Regions ,
+     TechListFlex , RelatedItems , TechListGrid , DescriptionCheckList , YouMayLikeItems , WaysToPay ,products};

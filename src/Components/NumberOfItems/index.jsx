@@ -18,7 +18,7 @@ const NumOfItems = styled.div`
     background-color: white;
     padding: 0 1em;
     border-radius: 6px;
-    border: 1px solid #E4E4E3;
+    border: 2px solid #E4E4E3;
 
     #verified{
         width: 20px;
@@ -72,8 +72,8 @@ const Views = styled.div`
     gap: 0em;
 
     div{
-        width: 38px;
-        height: 40px;
+        width: 37px;
+        height: 37px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -84,13 +84,19 @@ const Views = styled.div`
         }
     }
 
-    #flex{
-        background-color: #E3E8EE;
+    #flexView{
+     width: 70%;
+     height: 70%;
+    }
+
+    #gridView{
+     width: 70%;
+     height: 60%;
     }
 
 `;
 
-function index({numberOfItems}) {
+function index({numberOfItems , onClickGrid , onClickFlex , styleGrid , styleFlex}) {
   return (
     <NumOfItems>
         <Left>
@@ -106,8 +112,9 @@ function index({numberOfItems}) {
                 <option>Featured</option>
             </select>
             <Views>
-                <div ><Icon src={grid}/></div>
-                <div id='flex'><Icon src={flex}/></div>
+
+                <div onClick={onClickGrid} style={styleGrid} grid><Icon  id='gridView' src={grid}/></div>
+                <div  onClick={onClickFlex} style={styleFlex}><Icon id='flexView' src={flex}/></div>
             </Views>
         </Right>
     </NumOfItems>

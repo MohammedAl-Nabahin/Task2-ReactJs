@@ -11,7 +11,7 @@ function index() {
   return (
     
         <Logo>
-             <Link to={"/Home"} id="logoLink">
+             <Link to={"/"} id="logoLink">
       <img src={logo} alt="logo" id='mylogo'/>
 
 

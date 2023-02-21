@@ -1,13 +1,16 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom';
 
 import NavIcon from './style';
 
-function index({src , alt , id , iconTitle , className}) {
+function index({src , alt , id , iconTitle , className , to}) {
   return (
-    <NavIcon>
-        <img src={src} alt={alt} id={id} className={className}/>
-        <span id='iconTitle'>{iconTitle}</span>
-    </NavIcon>
+    <NavLink to={to}>
+      <NavIcon>
+          <img src={src} alt={alt} id={id} className={className}/>
+          <span id='iconTitle'>{iconTitle}</span>
+      </NavIcon>
+    </NavLink>
   )
 }
 

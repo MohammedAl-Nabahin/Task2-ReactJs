@@ -8,19 +8,20 @@ const HeaderContainer = styled.div`
     background-color: white;
     margin-bottom: 1em;
     z-index: 10;
-    /* position: static; */
-    /* margin: auto; */
 
+    a{
+        text-decoration: none;
+    }
 `;
 
 
 const HeaderSectionOne = styled.div`
     display: flex;
-    /* flex-direction: row; */
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     border-bottom: 0.1em solid #E3E8EE;
-    max-width: 100%;
+    width: 100%;
     /* padding: 0 3em; */
     /* position: relative; */
 
@@ -134,7 +135,7 @@ const InnerContainer = styled.div`
     flex: row;
     justify-content: center;
     align-items: center;
-    gap:40px;
+    gap:20px;
 `;
 
 
@@ -144,7 +145,7 @@ const InnerContainer2 = styled.div`
     flex: row;
     /* justify-content: space-between; */
     /* align-items: center; */
-    gap:247px;
+    gap:217px;
     padding-left: 23px;
 `;
 
