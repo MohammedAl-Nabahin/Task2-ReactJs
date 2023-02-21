@@ -19,7 +19,7 @@ import fav from '../../images/icons/favorite.png';
 import cart from '../../images/icons/shopping-cart.png';
 import menu from '../../images/icons/menu.png';
 import germany from '../../images/icons/germany.svg';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 // import Container from '../Container/style';
 
 
@@ -42,7 +42,7 @@ function index() {
                         <NavIcon src={profile} alt="profile" id="profileIcon" iconTitle="Profile" className={"navImgs"}/>
                         <NavIcon src={chat} alt="chat" id="chatIcon" iconTitle="Message" className={"navImgs"}/>
                         <NavIcon src={fav} alt="orders" id="favIcon" iconTitle="Orders" className={"navImgs"}/>
-                        <NavIcon src={cart} alt="cart" id="cartIcon" iconTitle="My cart" className={"navImgs"}/>
+                        <NavIcon src={cart} alt="cart" id="cartIcon" iconTitle="My cart" className={"navImgs"} to="/cart"/>
                     </NavList>
                 </SettingsNav>
             </InnerContainer>

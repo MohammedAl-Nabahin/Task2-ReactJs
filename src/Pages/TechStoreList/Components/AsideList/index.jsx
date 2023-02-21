@@ -18,7 +18,7 @@ const ListContainer = styled.div`
   padding: 0;
 
 
-  ul , li{
+  ul {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;

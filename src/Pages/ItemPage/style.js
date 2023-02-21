@@ -1,12 +1,24 @@
 import styled from "styled-components";
 
-import shop from '../../images/backgrounds/shopNow.png';
 
 const IContainer = styled.div`
     display: flex;
     flex-direction: column;
     margin: auto;
-    width: 80vw;
+    width: 77vw;
+
+    #shop{
+        width: 100%;
+        height: 100%;
+        /* background-repeat: no-repeat;
+        background-size: cover; */
+    }
+
+    .side{
+        display: flex;
+        flex-direction:row;
+        gap: 20px;
+    }
 `
 
 const ItemPage = styled.div`
@@ -19,9 +31,7 @@ const ItemPage = styled.div`
     .shop{
         width: 100%;
         height: 120px;
-        background-image: url(${shop});
-        background-repeat: no-repeat;
-        background-size: cover;
+   
         border-radius: 6px;
     }
 `;
@@ -36,17 +46,15 @@ const RContainer = styled.div`
     border: 1px solid #E4E4E3;
     border-radius: 6px;
     background-color: white;
-    justify-content: flex-start;
-    /* align-items: center; */
+
 `;
 
 const AllItems = styled.div`
     display: flex;
     flex-direction: row;
-    gap: 2em;
+    gap:1.5em;
     background-color: white;
-    align-self: center;
-
+    width: 100%;
 `;
 
 const RItem = styled.div`
@@ -54,7 +62,6 @@ const RItem = styled.div`
     flex-direction: column;
     gap: 0.5em;
     width: 172px;
-    /* height: 254px; */
 
 
     p{

@@ -13,7 +13,7 @@ const SubmitButton = styled.button`
 `;
 
 const BContainer = styled.div`
-width: 100%;
+/* width: 100%; */
 `;
 
 export {SubmitButton , BContainer};

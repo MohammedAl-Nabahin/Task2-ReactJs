@@ -13,7 +13,7 @@ const Like = styled.div`
         justify-content: center;
         align-items: center;
         position: absolute;
-        border: 1px solid #E4E4E3;
+        border: 2px solid #E4E4E3;
         border-radius: 6px;
 `;
 

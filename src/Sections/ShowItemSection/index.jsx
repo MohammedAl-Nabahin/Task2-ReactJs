@@ -22,7 +22,7 @@ import Span from '../../Components/Span';
 
 
 function Index() {
-  const [pic , setPic] = useState({});
+  const [pic , setPic] = useState(shirt1);
 
 
   useEffect(()=>{
@@ -100,7 +100,7 @@ function Index() {
                   <span>Classic  shoes</span>
                 </Data>
                 <Data>
-                  <span>Material</span>
+                  <span>Material:</span>
                   <span>Plastic material</span>
                 </Data>
                 <Data>

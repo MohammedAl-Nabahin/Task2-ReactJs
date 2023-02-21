@@ -52,7 +52,7 @@ function Index() {
             <LabelAndInput labelText={"Password"} placeholder="At least 6 characters." type={"password"}/>
             <LabelAndInput labelText={"Repeat password"} placeholder="Type here" type={"password"}/>
 
-            <Link to={"/Home"}>
+            <Link to={"/"}>
                 <div className='contain'>
                 <SubmitButton buttonText={"Register now"} id="submitBtn"/>
                 </div>

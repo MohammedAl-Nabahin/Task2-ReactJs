@@ -20,6 +20,13 @@ const TechItem = styled.div`
     }
 
 
+    #viewAndAdd{
+        display: flex;
+        flex-direction:row;
+        gap: 5px;
+        align-items: center;
+        width: fit-content;
+    }
     
 `;
 
@@ -62,6 +69,8 @@ const ItemData = styled.div`
 const Price = styled.div`
     display: flex;
     flex-direction: row;
+    align-items: center;
+    gap: 0.5em;
 
     h2{
         font-weight: 600;
